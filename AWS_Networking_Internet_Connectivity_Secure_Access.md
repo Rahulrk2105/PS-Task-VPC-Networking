@@ -1,4 +1,4 @@
-# 🌐 AWS Networking – Internet Connectivity & Secure Internet Access
+# 🌐 Internet Gateway & Secure Internet Access NAT Gw
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazon-aws)
 ![Internet Gateway](https://img.shields.io/badge/Internet-Gateway-blue?logo=amazon-aws)
@@ -31,7 +31,8 @@ VPC
 
 ### 📸 Screenshot
 
-![Internet Gateway](./screenshots/10-internet-gateway.png)
+<img width="1611" height="462" alt="image" src="https://github.com/user-attachments/assets/b39441b0-9114-4404-a23c-77469ff4b0b3" />
+
 
 ---
 
@@ -64,7 +65,7 @@ Internet
 
 ### 📸 Screenshot
 
-![Default Route](./screenshots/11-default-route.png)
+<img width="1580" height="367" alt="image" src="https://github.com/user-attachments/assets/b7bfb72d-c7d9-42d1-a62c-04f2f3e55ec1" />
 
 ---
 
@@ -102,7 +103,8 @@ Internet
 
 ### 📸 Screenshot
 
-![NAT Gateway](./screenshots/12-nat-gateway.png)
+<img width="1611" height="697" alt="image" src="https://github.com/user-attachments/assets/cdeda795-2b11-43e6-97f6-43f140196e5f" />
+
 
 ---
 
@@ -114,7 +116,8 @@ The Elastic IP provides a static public IPv4 address for the NAT Gateway.
 
 ### 📸 Screenshot
 
-![Elastic IP](./screenshots/13-elastic-ip.png)
+<img width="1605" height="406" alt="image" src="https://github.com/user-attachments/assets/c423c2e1-d851-49a4-8eea-dcfe515ed55a" />
+
 
 ---
 
@@ -150,11 +153,10 @@ Internet
 
 ### 📸 Screenshot
 
-![Private Route Table](./screenshots/14-private-route-table.png)
+<img width="1586" height="497" alt="image" src="https://github.com/user-attachments/assets/22c45593-5b22-49d8-92a1-666d07b97d0d" />
+
 
 ---
-
-# 🧠 AWS Networking Terms
 
 ## Internet Gateway
 
