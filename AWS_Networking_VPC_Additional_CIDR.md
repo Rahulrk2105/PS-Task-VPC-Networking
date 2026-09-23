@@ -9,7 +9,6 @@
 
 ## 📌 Overview
 
-This lab covers two AWS networking tasks:
 
 1. **Create an Amazon VPC**
 2. **Add Additional CIDR Blocks to an Amazon VPC**
@@ -102,22 +101,6 @@ The VPC route table was verified with the following local routes:
 ```
 
 ---
-
-## 📊 Final Verification
-
-| Configuration | Status |
-|---|---|
-| VPC Created | ✅ |
-| Primary CIDR `10.0.0.0/16` | ✅ |
-| DNS Resolution | ✅ |
-| DNS Hostnames | ✅ |
-| Secondary CIDR `10.1.0.0/16` | ✅ |
-| Route Table Verified | ✅ |
-| Network Reachability | ⏳ |
-
-
-
-## ✅ Conclusion
 
 The Amazon VPC was successfully created with the primary CIDR `10.0.0.0/16`.  
 A secondary CIDR `10.1.0.0/16` was also added and verified through the VPC route table.
