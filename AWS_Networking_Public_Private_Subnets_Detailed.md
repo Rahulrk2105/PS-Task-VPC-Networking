@@ -174,9 +174,94 @@ This keeps resources launched in the private subnet from automatically receiving
 
 ---
 
-# 🔹 Step 7 – Public and Private Subnet Layout
+# 🔹 Step 7 – Create Isolated Subnets
 
-The subnet configuration can be represented as:
+I created the required **Isolated Subnets** inside the VPC.
+
+An isolated subnet does not have a route to an **Internet Gateway** or other external network.
+
+### Isolated Subnet Configuration
+
+```text
+VPC
+    |
+    └── Isolated Subnet
+            |
+            └── Isolated Route Table
+```
+
+The isolated subnet was configured with:
+
+- VPC association
+- Availability Zone
+- IPv4 CIDR block
+- Isolated Route Table
+- No Internet Gateway route
+- Public IPv4 address assignment disabled
+
+### 📸 Screenshot
+
+<img width="1592" height="655" alt="image" src="https://github.com/user-attachments/assets/66afcf84-6f05-4622-aa83-f018d32372d3" />
+
+
+---
+
+# 🔹 Step 8 – Associate Isolated Route Table
+
+I associated the Isolated Subnet with the appropriate **Route Table**.
+
+```text
+Isolated Subnet
+      |
+      ↓
+Isolated Route Table
+```
+
+The isolated route table does not contain a default route to an Internet Gateway.
+
+### Route Configuration
+
+```text
+Destination: VPC CIDR
+Target: local
+```
+
+### 📸 Screenshot
+
+<img width="1607" height="735" alt="image" src="https://github.com/user-attachments/assets/b1fa56db-d83a-40c6-8d21-da8fd9d0a51b" />
+
+
+---
+
+# 🔹 Step 9 – Validate Subnet Isolation
+
+I checked the route table associated with the Isolated Subnet to confirm that there was no route to an **Internet Gateway**.
+
+```text
+Isolated Subnet
+      |
+      ↓
+Isolated Route Table
+      |
+      └── No Internet Gateway Route
+```
+
+This keeps resources inside the isolated subnet from having direct internet connectivity.
+
+
+---
+
+# 🔍 Isolated Subnet Configuration
+
+| Configuration | Isolated Subnet |
+|---|---|
+| Route Table | Isolated Route Table |
+| Internet Gateway Route | No |
+| Public IPv4 Assignment | Disabled |
+| External Connectivity | Isolated |
+| Purpose | Resources requiring network isolation |
+
+---
 
 ```text
                          Ps-task-vpc
