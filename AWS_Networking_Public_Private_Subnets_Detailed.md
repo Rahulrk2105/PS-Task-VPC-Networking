@@ -1,4 +1,4 @@
-# 🌐 Lab – Create Public and Private Subnets
+# 🌐 Public and Private Subnets
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazon-aws)
 ![Amazon VPC](https://img.shields.io/badge/Amazon-VPC-blue?logo=amazon-aws)
@@ -6,26 +6,6 @@
 ![Private Subnet](https://img.shields.io/badge/Subnet-Private-purple?logo=amazon-aws)
 ![Route Tables](https://img.shields.io/badge/Route-Tables-orange?logo=amazon-aws)
 
----
-
-# 📖 Project Overview
-
-In this hands-on lab, I created **Public Subnets** and **Private Subnets** inside the existing Amazon VPC.
-
-I configured the subnet associations and public IP address settings based on the subnet type.
-
-The lab covered:
-
-- Public Subnets
-- Private Subnets
-- Availability Zones
-- IPv4 CIDR Blocks
-- Route Tables
-- Route Table Associations
-- Public IPv4 Address Assignment
-- Private Subnet Configuration
-- Auto-assign Public IPv4 Address
-- Internet Gateway route for public connectivity
 
 ---
 
@@ -72,7 +52,8 @@ The public subnet was configured with:
 
 ### 📸 Screenshot
 
-![Public Subnet](./screenshots/01-public-subnet.png)
+<img width="1577" height="652" alt="image" src="https://github.com/user-attachments/assets/6eb60fc1-0007-4b95-990e-5d1c88b8a665" />
+
 
 ---
 
@@ -105,7 +86,8 @@ The `0.0.0.0/0` route represents the default IPv4 route.
 
 ### 📸 Screenshot
 
-![Public Route Table](./screenshots/02-public-route-table.png)
+<img width="1601" height="737" alt="image" src="https://github.com/user-attachments/assets/076addfb-9e3a-409e-b43f-22dd2195b947" />
+
 
 ---
 
@@ -122,9 +104,6 @@ Auto-assign Public IPv4 Address
 
 This allows resources launched in the subnet to automatically receive a public IPv4 address when the instance configuration allows it.
 
-### 📸 Screenshot
-
-![Public IP Assignment](./screenshots/03-public-ip-assignment.png)
 
 ---
 
@@ -154,7 +133,7 @@ The private subnet was configured with:
 
 ### 📸 Screenshot
 
-![Private Subnet](./screenshots/04-private-subnet.png)
+<img width="1585" height="692" alt="image" src="https://github.com/user-attachments/assets/6bdefb0a-b118-42ff-a9d2-4bcc918616db" />
 
 ---
 
@@ -175,7 +154,7 @@ The route table association determines which routes are applied to resources ins
 
 ### 📸 Screenshot
 
-![Private Route Table](./screenshots/05-private-route-table.png)
+<img width="1586" height="576" alt="image" src="https://github.com/user-attachments/assets/172eab69-6774-4311-a72b-9c995aec9710" />
 
 ---
 
@@ -192,9 +171,6 @@ Auto-assign Public IPv4 Address
 
 This keeps resources launched in the private subnet from automatically receiving public IPv4 addresses.
 
-### 📸 Screenshot
-
-![Private IP Assignment](./screenshots/06-private-ip-assignment.png)
 
 ---
 
@@ -234,55 +210,3 @@ The subnet configuration can be represented as:
 
 ---
 
-# 🧠 AWS Networking Terms Used
-
-## VPC
-
-A **Virtual Private Cloud (VPC)** is the isolated virtual network where the subnets are created.
-
-## Subnet
-
-A **Subnet** is a logical section of a VPC IP address range.
-
-## Public Subnet
-
-A **Public Subnet** is associated with a route table that has a route to an **Internet Gateway**.
-
-## Private Subnet
-
-A **Private Subnet** does not have a direct route to an Internet Gateway.
-
-## Route Table
-
-A **Route Table** contains routing rules that control where network traffic is sent.
-
-## Route Table Association
-
-A **Route Table Association** connects a subnet to a route table.
-
-## Internet Gateway
-
-An **Internet Gateway** provides a path between a VPC and the internet when the appropriate route and public addressing are configured.
-
-## Auto-assign Public IPv4 Address
-
-This subnet setting controls whether launched resources can automatically receive a public IPv4 address.
-
-## Availability Zone
-
-An **Availability Zone (AZ)** is an isolated location within an AWS Region where subnets can be created.
-
-## CIDR Block
-
-A **CIDR Block** defines the IP address range assigned to the subnet.
-
----
-
-# 📝 Important Notes
-
-- Public and private subnets are created inside a VPC.
-- Each subnet is associated with a route table.
-- A public subnet uses a route to an Internet Gateway for public connectivity.
-- Public IP assignment is enabled for the public subnet.
-- Public IP assignment is disabled for the private subnet.
-- Route table association determines the routing rules applied to each subnet.
