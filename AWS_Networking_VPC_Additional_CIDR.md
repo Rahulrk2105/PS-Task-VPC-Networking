@@ -3,7 +3,7 @@
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazon-aws)
 ![Amazon VPC](https://img.shields.io/badge/Amazon-VPC-blue?logo=amazon-aws)
 ![Secondary CIDR](https://img.shields.io/badge/Secondary-CIDR-blue?logo=amazon-aws)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
 
 ---
 
@@ -42,7 +42,8 @@ VPC
 
 ### 📸 VPC Details
 
-![VPC Details](./screenshots/01-vpc-details.png)
+<img width="1587" height="487" alt="image" src="https://github.com/user-attachments/assets/35c8fba7-ff09-4614-a78b-e15cceb1f216" />
+
 
 ---
 
@@ -69,11 +70,7 @@ VPC
 
 ### 📸 Secondary CIDR
 
-![Secondary CIDR](./screenshots/02-secondary-cidr.png)
-
-### 📸 VPC CIDRs
-
-![VPC CIDRs](./screenshots/03-vpc-cidrs.png)
+<img width="1587" height="742" alt="image" src="https://github.com/user-attachments/assets/0ce296c7-ecfb-489d-9724-981faf375273" />
 
 ---
 
@@ -88,7 +85,7 @@ The VPC route table was verified with the following local routes:
 
 ### 📸 Route Table
 
-![Route Table](./screenshots/04-route-table.png)
+<img width="1600" height="721" alt="image" src="https://github.com/user-attachments/assets/1241c18b-b77a-4c09-8aa5-52a44348c6e9" />
 
 ---
 
@@ -118,20 +115,7 @@ The VPC route table was verified with the following local routes:
 | Route Table Verified | ✅ |
 | Network Reachability | ⏳ |
 
-> End-to-end network reachability was not tested because no EC2 test resources were created for this lab.
 
----
-
-## 🧠 What I Learned
-
-- Creating an Amazon VPC
-- Configuring IPv4 CIDR blocks
-- Enabling DNS Resolution and DNS Hostnames
-- Adding a secondary CIDR block
-- Verifying local VPC routes
-- Understanding VPC address space expansion
-
----
 
 ## ✅ Conclusion
 
