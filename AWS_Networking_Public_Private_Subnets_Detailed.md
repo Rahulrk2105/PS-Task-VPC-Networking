@@ -1,9 +1,10 @@
-# 🌐 Public and Private Subnets
+# 🌐 Public, Private Subnets and Isolated Subnets
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazon-aws)
 ![Amazon VPC](https://img.shields.io/badge/Amazon-VPC-blue?logo=amazon-aws)
 ![Public Subnet](https://img.shields.io/badge/Subnet-Public-green?logo=amazon-aws)
 ![Private Subnet](https://img.shields.io/badge/Subnet-Private-purple?logo=amazon-aws)
+![Isolated Subnet](https://img.shields.io/badge/Subnet-Isolated-red?logo=amazon-aws)
 ![Route Tables](https://img.shields.io/badge/Route-Tables-orange?logo=amazon-aws)
 
 
